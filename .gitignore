@@ -1,2 +1,5 @@
 node_modules
 projectinfo.txt
+.env
+indej.js
+kittens.js

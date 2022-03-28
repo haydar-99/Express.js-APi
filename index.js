@@ -2,8 +2,14 @@ const express = require("express");
 const { default: mongoose } = require("mongoose");
 const env = require('dotenv').config()
 const app = express()
+const router = require("./router/router")
+const  bodyParser = require('body-parser')
 
-
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use("/router", router)
+// app.get("/", (req,res) =>{
+// res.json("hej")
+// })
 
 
 mongoose
